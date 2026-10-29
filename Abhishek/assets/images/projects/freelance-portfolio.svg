@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAFAFA"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#E2E8F0" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad2)"/>
+  <rect width="800" height="500" fill="url(#grid2)" opacity="0.5"/>
+
+  <!-- Browser Frame -->
+  <rect x="50" y="40" width="700" height="420" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="drop-shadow(0 10px 25px rgba(0,0,0,0.04))"/>
+  
+  <!-- Frame Header -->
+  <path d="M50 50 A10 10 0 0 1 60 40 L740 40 A10 10 0 0 1 750 50 L750 80 L50 80 Z" fill="#F8FAFC"/>
+  <line x1="50" y1="80" x2="750" y2="80" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="75" cy="60" r="4.5" fill="#CBD5E1"/>
+  <circle cx="92" cy="60" r="4.5" fill="#CBD5E1"/>
+  <circle cx="109" cy="60" r="4.5" fill="#CBD5E1"/>
+  <rect x="140" y="50" width="360" height="20" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="155" y="64" font-family="monospace" font-size="10" fill="#64748B">portfolio-website-two-sigma-21.vercel.app</text>
+
+  <!-- Website Content Preview Mockup -->
+  <!-- Header Bar inside Mockup -->
+  <rect x="80" y="105" width="640" height="36" rx="6" fill="#F8FAFC" stroke="#F1F5F9" stroke-width="1"/>
+  <rect x="100" y="117" width="80" height="12" rx="3" fill="#0F172A"/>
+  <rect x="500" y="118" width="40" height="10" rx="2" fill="#94A3B8"/>
+  <rect x="555" y="118" width="45" height="10" rx="2" fill="#94A3B8"/>
+  <rect x="615" y="113" width="85" height="20" rx="4" fill="#2563EB"/>
+
+  <!-- Hero inside Mockup -->
+  <g transform="translate(100, 165)">
+    <rect x="0" y="0" width="130" height="16" rx="4" fill="#EFF6FF"/>
+    <text x="10" y="12" font-family="monospace" font-size="9" font-weight="600" fill="#2563EB">FREELANCE CLIENT HUB</text>
+    
+    <text x="0" y="45" font-family="sans-serif" font-size="22" font-weight="800" fill="#0F172A">Digital Experiences &amp; Solutions</text>
+    <text x="0" y="70" font-family="sans-serif" font-size="13" fill="#64748B">Engineered with TypeScript, modern CSS architecture, and high performance.</text>
+    
+    <rect x="0" y="90" width="110" height="28" rx="6" fill="#0F172A"/>
+    <text x="55" y="108" font-family="sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">View Services</text>
+
+    <rect x="125" y="90" width="90" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="170" y="108" font-family="sans-serif" font-size="11" font-weight="500" fill="#475569" text-anchor="middle">Contact</text>
+  </g>
+
+  <!-- Showcase Cards in Mockup -->
+  <g transform="translate(100, 310)">
+    <rect x="0" y="0" width="180" height="110" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="15" y="15" width="28" height="28" rx="6" fill="#DBEAFE"/>
+    <text x="15" y="65" font-family="sans-serif" font-size="13" font-weight="700" fill="#0F172A">Web Engineering</text>
+    <text x="15" y="85" font-family="sans-serif" font-size="10" fill="#64748B">Modular, fast frontend</text>
+
+    <rect x="205" y="0" width="180" height="110" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="220" y="15" width="28" height="28" rx="6" fill="#ECFDF5"/>
+    <text x="220" y="65" font-family="sans-serif" font-size="13" font-weight="700" fill="#0F172A">UI/UX Systems</text>
+    <text x="220" y="85" font-family="sans-serif" font-size="10" fill="#64748B">Clean design tokens</text>
+
+    <rect x="410" y="0" width="180" height="110" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="425" y="15" width="28" height="28" rx="6" fill="#FEF3C7"/>
+    <text x="425" y="65" font-family="sans-serif" font-size="13" font-weight="700" fill="#0F172A">Deployment</text>
+    <text x="425" y="85" font-family="sans-serif" font-size="10" fill="#64748B">Vercel cloud integration</text>
+  </g>
+</svg>
+

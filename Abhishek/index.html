@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Singh Miyan — Learning, Building &amp; Exploring Technology</title>
+  
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description" content="Personal website of Abhishek Singh Miyan. B.Tech student currently learning web development, DSA, and embedded systems, with a keen curiosity for robotics, computer vision, and future autonomous concepts like AeroKart.">
+  <meta name="keywords" content="Abhishek Singh Miyan, B.Tech Student, Learning Web Development, MERN, Python, DSA, Embedded Systems, IoT, Arduino, Robotics, UAV, AeroKart">
+  <meta name="author" content="Abhishek Singh Miyan">
+  <link rel="canonical" href="https://github.com/abhishekmiyan34-gif">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abhishek Singh Miyan — Learning, Building &amp; Exploring Technology">
+  <meta property="og:description" content="B.Tech student learning full-stack basics, DSA, and embedded systems — curious about robotics, computer vision, and autonomous ideas.">
+  <meta property="og:url" content="https://github.com/abhishekmiyan34-gif">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abhishek Singh Miyan — Portfolio">
+  <meta name="twitter:description" content="Learning. Building. Experimenting. Figuring out what I want to become.">
+  <meta name="twitter:image" content="assets/images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            offwhite: '#FAF9F6',
+            charcoal: {
+              900: '#111827',
+              800: '#1F2937',
+              700: '#374151',
+              600: '#4B5563',
+            },
+            accent: {
+              blue: '#2563EB',
+              blueHover: '#1D4ED8',
+              blueTint: '#EFF6FF',
+              blueBorder: '#BFDBFE',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#FAF9F6] text-[#111827] antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- Top Announcement / Micro Status Header -->
+  <div class="border-b border-gray-200/60 bg-white/70 py-1.5 px-4 text-xs font-mono text-gray-500">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+        <span>STUDENT LOG // LEARNING &amp; EXPERIMENTING · B.TECH CSE</span>
+      </div>
+      <div class="hidden sm:flex items-center space-x-4">
+        <span>LOC: INDIA</span>
+        <span>EXPLORING: AEROKART CONCEPT</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Premium Navigation Bar -->
+  <header id="main-navbar" class="sticky top-0 z-40 transition-all duration-300 border-b border-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Brand / Identity -->
+      <a href="#hero" class="group flex items-center space-x-3 focus-visible:ring-2 focus-visible:ring-blue-600 rounded-md p-1">
+        <div class="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center text-white font-mono text-xs font-bold transition-transform group-hover:scale-105">
+          AM
+        </div>
+        <div>
+          <span class="block text-sm sm:text-base font-bold tracking-tight text-gray-900 group-hover:text-blue-600 transition-colors">
+            Abhishek Singh Miyan
+          </span>
+          <span class="block font-mono text-[10px] text-gray-500 -mt-0.5 tracking-wider">
+            LEARN · BUILD · EXPERIMENT
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="#about" class="desktop-nav-link text-gray-600 hover:text-gray-900 transition-colors">About</a>
+        <a href="#skills" class="desktop-nav-link text-gray-600 hover:text-gray-900 transition-colors">Skills</a>
+        <a href="#projects" class="desktop-nav-link text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
+        <a href="#aerokart" class="desktop-nav-link text-gray-600 hover:text-gray-900 transition-colors">AeroKart Vision</a>
+        <a href="#journey" class="desktop-nav-link text-gray-600 hover:text-gray-900 transition-colors">Roadmap</a>
+        <a href="#philosophy" class="desktop-nav-link text-gray-600 hover:text-gray-900 transition-colors">Philosophy</a>
+        <a href="#contact" class="desktop-nav-link text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA & Socials -->
+      <div class="hidden md:flex items-center space-x-3">
+        <a href="https://github.com/abhishekmiyan34-gif" target="_blank" rel="noopener noreferrer" class="p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors" title="GitHub Profile">
+          <span class="sr-only">GitHub</span>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/abhishek-singh-miyan-29091a363/" target="_blank" rel="noopener noreferrer" class="p-2 text-gray-600 hover:text-blue-600 hover:bg-gray-100 rounded-lg transition-colors" title="LinkedIn Profile">
+          <span class="sr-only">LinkedIn</span>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="#contact" class="inline-flex items-center px-4 py-2 border border-gray-900 bg-gray-900 text-white text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-blue-600 hover:border-blue-600 transition-colors shadow-sm">
+          Let's Connect
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex md:hidden items-center space-x-2">
+        <button id="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu-drawer" aria-label="Toggle navigation menu" class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu & Overlay -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 z-50 bg-gray-900/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
+  <div id="mobile-menu-drawer" class="fixed top-0 right-0 z-50 w-4/5 max-w-sm h-full bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-gray-200">
+        <div class="flex items-center space-x-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+          <span class="font-mono text-xs font-bold tracking-wider text-gray-900">MENU NAVIGATION</span>
+        </div>
+        <button id="mobile-menu-close" type="button" aria-label="Close menu" class="p-2 text-gray-500 hover:text-gray-900 rounded-lg hover:bg-gray-100">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-4 mt-6 text-base font-medium">
+        <a href="#about" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-1 border-b border-gray-100">01. About</a>
+        <a href="#skills" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-1 border-b border-gray-100">02. Skills &amp; Explorations</a>
+        <a href="#projects" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-1 border-b border-gray-100">03. Projects</a>
+        <a href="#aerokart" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-1 border-b border-gray-100">04. AeroKart Vision</a>
+        <a href="#journey" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-1 border-b border-gray-100">05. Learning Roadmap</a>
+        <a href="#philosophy" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-1 border-b border-gray-100">06. Philosophy</a>
+        <a href="#contact" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-1">07. Contact</a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-gray-200 space-y-4">
+      <a href="#contact" class="mobile-nav-link block w-full text-center py-2.5 bg-gray-900 text-white rounded-lg text-sm font-semibold hover:bg-blue-600 transition-colors">
+        Let's Connect
+      </a>
+      <div class="flex items-center justify-center space-x-6 text-gray-500 pt-2">
+        <a href="https://github.com/abhishekmiyan34-gif" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900">GitHub</a>
+        <span class="text-gray-300">·</span>
+        <a href="https://www.linkedin.com/in/abhishek-singh-miyan-29091a363/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- =====================================================================
+         SECTION 1: HERO SECTION
+         ===================================================================== -->
+    <section id="hero" class="relative pt-12 pb-20 sm:pt-20 sm:pb-28 overflow-hidden bg-tech-grid">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Copy (7 cols) -->
+          <div class="lg:col-span-7 space-y-6 sm:space-y-8">
+            
+            <!-- Student Status Tag -->
+            <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white border border-gray-200 shadow-sm text-xs font-mono text-gray-700">
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              <span>B.TECH CSE STUDENT // LEARNING &amp; EXPLORING</span>
+              <span class="text-gray-300">|</span>
+              <span class="text-blue-600 font-semibold">TINKERING &amp; BUILDING</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-950 leading-[1.12]">
+              I build software today for the <span class="text-blue-600 underline decoration-blue-200 decoration-wavy decoration-2 underline-offset-8">autonomous systems</span> I want to build tomorrow.
+            </h1>
+
+            <!-- Narrative Subtext -->
+            <p class="text-base sm:text-lg text-gray-600 max-w-2xl font-normal leading-relaxed">
+              I am a B.Tech student learning full-stack web development, Data Structures &amp; Algorithms, Python, and embedded systems. I love learning through projects, experimenting with hardware, and discovering what's possible as I explore my interests in robotics, computer vision, and autonomous ideas like AeroKart.
+            </p>
+
+            <!-- Action CTAs & Profile Links -->
+            <div class="pt-2 flex flex-wrap items-center gap-4">
+              <a href="#projects" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-gray-950 text-white text-sm font-semibold hover:bg-blue-600 transition-all shadow-sm group">
+                <span>View Projects</span>
+                <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+
+              <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-gray-800 text-sm font-semibold border border-gray-200 hover:border-gray-900 transition-all shadow-sm">
+                Let's Connect
+              </a>
+
+              <div class="flex items-center space-x-2 pl-2">
+                <a href="https://github.com/abhishekmiyan34-gif" target="_blank" rel="noopener noreferrer" class="p-3 bg-white border border-gray-200 rounded-xl text-gray-700 hover:text-black hover:border-gray-400 transition-all shadow-sm" title="Visit GitHub Profile">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/abhishek-singh-miyan-29091a363/" target="_blank" rel="noopener noreferrer" class="p-3 bg-white border border-gray-200 rounded-xl text-gray-700 hover:text-blue-600 hover:border-gray-400 transition-all shadow-sm" title="Visit LinkedIn Profile">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Authentic Indicators -->
+            <div class="pt-6 grid grid-cols-3 gap-4 border-t border-gray-200/80 font-mono text-xs">
+              <div>
+                <span class="block text-gray-400 text-[10px]">CURRENTLY LEARNING</span>
+                <span class="font-semibold text-gray-800">Web Dev · DSA · Python</span>
+              </div>
+              <div>
+                <span class="block text-gray-400 text-[10px]">EXPERIMENTING WITH</span>
+                <span class="font-semibold text-gray-800">Arduino &amp; Sensors</span>
+              </div>
+              <div>
+                <span class="block text-gray-400 text-[10px]">AREAS I'M CURIOUS ABOUT</span>
+                <span class="font-semibold text-blue-600">Robotics &amp; AeroKart</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Portrait & Engineering Framing (5 cols) -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-sm">
+              
+              <!-- Subtle Student Corner Marks -->
+              <div class="absolute -top-3 -left-3 font-mono text-[9px] text-gray-400 bg-white px-1.5 py-0.5 rounded border border-gray-200">
+                STUDENT // B.TECH CSE
+              </div>
+              <div class="absolute -bottom-3 -right-3 font-mono text-[9px] text-gray-400 bg-white px-1.5 py-0.5 rounded border border-gray-200">
+                LEARNING // IN PROGRESS
+              </div>
+
+              <!-- Main Portrait Container -->
+              <div class="relative rounded-2xl bg-white p-2.5 shadow-xl border border-gray-200/80 tech-tick">
+                <div class="relative overflow-hidden rounded-xl bg-gray-100 aspect-[4/5]">
+                  <img src="assets/images/profile.jpg" alt="Abhishek Singh Miyan" class="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500" loading="eager">
+                  
+                  <!-- Subtle Bottom Overlay Badge -->
+                  <div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-gray-950/80 via-gray-950/40 to-transparent">
+                    <div class="flex items-center justify-between text-white">
+                      <div>
+                        <span class="block font-semibold text-xs tracking-wide">Abhishek Singh Miyan</span>
+                        <span class="block font-mono text-[10px] text-gray-300">B.Tech Student &amp; Learner</span>
+                      </div>
+                      <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-blue-600/90 text-white font-mono text-[9px] font-medium">
+                        GROWING STEP BY STEP
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Subtle Technical Sub-badge below image -->
+              <div class="mt-3 flex items-center justify-between px-2 font-mono text-[10px] text-gray-500">
+                <span>LEARNING PORTFOLIO · 2026</span>
+                <span>AUTHENTIC JOURNEY</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================================
+         SECTION 2: EDITORIAL ABOUT SECTION
+         ===================================================================== -->
+    <section id="about" class="py-20 border-t border-gray-200/80 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-12">
+          <span class="font-mono text-xs font-semibold text-blue-600 uppercase tracking-wider block mb-2">01 // ABOUT MY JOURNEY</span>
+          <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-gray-950">
+            Learning by doing, experimenting with code, and exploring what excites me.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Editorial Column 1 (7 cols) -->
+          <div class="lg:col-span-7 space-y-6 text-base text-gray-700 leading-relaxed">
+            <p>
+              I am a B.Tech student currently in the early stages of my engineering education. I believe the best way to understand technology isn't just reading textbooks — it's sitting down, writing code, tinkering with hardware, making mistakes, and seeing how things work from the ground up.
+            </p>
+            <p>
+              My journey started with the basics of the web: semantic HTML, responsive CSS, and JavaScript. Along the way, I've been learning Data Structures &amp; Algorithms using Python and C++, getting comfortable with the Linux terminal, and practicing Git for version control.
+            </p>
+            <p>
+              Beyond software, I'm genuinely curious about physical computing. I like tinkering with Arduino boards, wiring basic sensors, and seeing code interact with the physical world. That curiosity is what makes me excited about learning robotics, computer vision, and autonomous drone concepts like AeroKart in the future.
+            </p>
+            <div class="p-5 rounded-xl bg-gray-50 border-l-4 border-blue-600 border border-gray-200/60 font-medium text-gray-900">
+              «I don't claim to be an expert in technologies I am still learning. What I care about is staying curious: every concept I study becomes code, every challenge teaches me something new, and every project helps me grow.»
+            </div>
+          </div>
+
+          <!-- Editorial Column 2 / Fact Matrix (5 cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="bg-[#FAF9F6] p-6 rounded-2xl border border-gray-200 space-y-5">
+              <h3 class="font-mono text-xs uppercase tracking-wider text-gray-500 font-semibold border-b border-gray-200 pb-2">
+                WHERE I AM TODAY
+              </h3>
+
+              <div class="space-y-4 text-sm">
+                <div class="flex items-start justify-between">
+                  <span class="text-gray-500 font-mono text-xs">Current Identity</span>
+                  <span class="font-semibold text-gray-900 text-right">B.Tech Student (Computer Science)</span>
+                </div>
+                <div class="flex items-start justify-between">
+                  <span class="text-gray-500 font-mono text-xs">Currently Learning</span>
+                  <span class="font-semibold text-gray-900 text-right">Web Development · DSA · Python · Linux</span>
+                </div>
+                <div class="flex items-start justify-between">
+                  <span class="text-gray-500 font-mono text-xs">Experimenting With</span>
+                  <span class="font-semibold text-gray-900 text-right">Arduino · Basic Sensors · Breadboard Circuits</span>
+                </div>
+                <div class="flex items-start justify-between">
+                  <span class="text-gray-500 font-mono text-xs">Areas I'm Curious About</span>
+                  <span class="font-semibold text-blue-600 text-right">Robotics · ROS · Computer Vision · UAVs</span>
+                </div>
+                <div class="flex items-start justify-between">
+                  <span class="text-gray-500 font-mono text-xs">Long-Term Idea</span>
+                  <span class="font-semibold text-gray-900 text-right">AeroKart (Autonomous Logistics Concept)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Honest Story Pill -->
+            <div class="p-5 rounded-2xl bg-blue-50/60 border border-blue-200 text-blue-950 space-y-2">
+              <span class="font-mono text-xs font-bold text-blue-700 tracking-wider uppercase block">MY STORY</span>
+              <p class="text-sm font-medium text-blue-900">
+                “I'm learning. I'm building. I'm experimenting. I'm figuring out what I want to become.”
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================================
+         SECTION 3: SKILLS & EXPLORATIONS (HONEST STUDENT LEVEL)
+         ===================================================================== -->
+    <section id="skills" class="py-20 border-t border-gray-200/80 bg-[#FAF9F6]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mb-12">
+          <span class="font-mono text-xs font-semibold text-blue-600 uppercase tracking-wider block mb-2">02 // SKILLS &amp; EXPLORATIONS</span>
+          <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-gray-950">
+            Technologies I'm learning and areas I'm curious about.
+          </h2>
+          <p class="text-gray-600 mt-2 text-sm sm:text-base">
+            An honest look at what I work with day-to-day versus what I am exploring and excited to study next. No fake percentage bars.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Category 1: Web Development (Currently Learning) -->
+          <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm editorial-card space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-gray-100">
+              <span class="font-mono text-xs font-bold text-gray-900 uppercase">01 / WEB DEVELOPMENT</span>
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            </div>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Currently learning core web technologies through practice projects and layout experiments.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">HTML5</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">CSS3</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">Tailwind CSS</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">JavaScript (Basics)</span>
+              <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium">TypeScript (Learning)</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">MERN (Concepts)</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming Fundamentals -->
+          <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm editorial-card space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-gray-100">
+              <span class="font-mono text-xs font-bold text-gray-900 uppercase">02 / PROGRAMMING</span>
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            </div>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Developing fundamentals in programming languages and solving algorithmic problems.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">Python (Learning)</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">C Language</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">C++ (Basics)</span>
+              <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium">DSA (Practicing)</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">Basic Complexity</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">OOP Basics</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Environment -->
+          <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm editorial-card space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-gray-100">
+              <span class="font-mono text-xs font-bold text-gray-900 uppercase">03 / TOOLS &amp; WORKFLOW</span>
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            </div>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Tools I use every day to write, track, and deploy small projects.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">Linux CLI / Terminal</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">Git</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">GitHub</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">Vercel (Deploying)</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">Netlify</span>
+              <span class="px-2.5 py-1 bg-gray-100 rounded-md text-xs font-medium text-gray-800">VS Code</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Areas I'm Curious About (Future Interests) -->
+          <div class="bg-gradient-to-br from-blue-50/70 to-indigo-50/30 p-6 rounded-2xl border border-blue-200 shadow-sm editorial-card space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-blue-200">
+              <span class="font-mono text-xs font-bold text-blue-900 uppercase">04 / AREAS I'M CURIOUS ABOUT</span>
+              <span class="w-2 h-2 rounded-full bg-blue-500 animate-ping"></span>
+            </div>
+            <p class="text-xs text-blue-800/80 leading-relaxed">
+              Topics and technologies I am excited to explore and learn as I progress in my studies.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 bg-white border border-blue-200 text-blue-900 rounded-md text-xs font-medium">IoT &amp; Sensors (Curious)</span>
+              <span class="px-2.5 py-1 bg-white border border-blue-200 text-blue-900 rounded-md text-xs font-medium">Arduino (Tinkering)</span>
+              <span class="px-2.5 py-1 bg-white border border-blue-200 text-blue-900 rounded-md text-xs font-medium">Embedded Basics</span>
+              <span class="px-2.5 py-1 bg-blue-600 text-white rounded-md text-xs font-semibold">ROS (Interested in)</span>
+              <span class="px-2.5 py-1 bg-white border border-blue-200 text-blue-900 rounded-md text-xs font-medium">Computer Vision (Want to learn)</span>
+              <span class="px-2.5 py-1 bg-white border border-blue-200 text-blue-900 rounded-md text-xs font-medium">PX4 &amp; ArduPilot (Future)</span>
+              <span class="px-2.5 py-1 bg-white border border-blue-200 text-blue-900 rounded-md text-xs font-medium">Fusion 360 (Curious)</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================================
+         SECTION 4: PROJECTS & EXPERIMENTS
+         ===================================================================== -->
+    <section id="projects" class="py-20 border-t border-gray-200/80 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+          <div class="max-w-2xl">
+            <span class="font-mono text-xs font-semibold text-blue-600 uppercase tracking-wider block mb-2">03 // PROJECTS &amp; EXPERIMENTS</span>
+            <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-gray-950">
+              Small projects and practice labs from my learning journey.
+            </h2>
+            <p class="text-gray-600 mt-2 text-sm sm:text-base">
+              Real repositories from my GitHub where I practice coding concepts, explore ideas, and build layouts.
+            </p>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="flex items-center space-x-2 bg-gray-100 p-1 rounded-xl text-xs font-semibold" role="tablist">
+            <button class="project-filter-btn px-3.5 py-2 rounded-lg bg-gray-900 text-white border border-gray-900 transition-all" data-filter="all" role="tab" aria-selected="true">
+              All Projects
+            </button>
+            <button class="project-filter-btn px-3.5 py-2 rounded-lg bg-white text-gray-600 border border-gray-200 hover:text-gray-900 transition-all" data-filter="featured" role="tab" aria-selected="false">
+              Project Highlights
+            </button>
+            <button class="project-filter-btn px-3.5 py-2 rounded-lg bg-white text-gray-600 border border-gray-200 hover:text-gray-900 transition-all" data-filter="foundation" role="tab" aria-selected="false">
+              Practice Labs
+            </button>
+          </div>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- PROJECT 1: AgriLink (Project Highlight) -->
+          <article class="project-item flex flex-col bg-[#FAF9F6] rounded-2xl border border-gray-200 overflow-hidden editorial-card" data-category="featured">
+            <div class="relative aspect-[16/10] bg-gray-100 border-b border-gray-200 overflow-hidden">
+              <img src="assets/images/projects/agrilink.svg" alt="AgriLink Platform Schematic" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3">
+                <span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-sm border border-gray-200 font-mono text-[10px] font-bold text-blue-600">
+                  EARLY CONCEPT
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-gray-950">AgriLink</h3>
+                  <span class="font-mono text-xs text-gray-400">TypeScript</span>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  An early project concept exploring direct farm-to-market connections using TypeScript. Experimenting with ideas for how software and logistics might help farmers connect with buyers.
+                </p>
+              </div>
+
+              <div class="space-y-4 pt-2 border-t border-gray-200/60">
+                <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">TypeScript</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Exploratory Concept</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Learning Project</span>
+                </div>
+
+                <div class="flex items-center space-x-3 pt-1">
+                  <a href="https://github.com/abhishekmiyan34-gif/agrilink" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-gray-900 hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    <span>View on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Personal Freelancing Website (Project Highlight + Live Demo) -->
+          <article class="project-item flex flex-col bg-[#FAF9F6] rounded-2xl border border-gray-200 overflow-hidden editorial-card" data-category="featured">
+            <div class="relative aspect-[16/10] bg-gray-100 border-b border-gray-200 overflow-hidden">
+              <img src="assets/images/projects/freelance-portfolio.svg" alt="Personal Freelance Website Preview" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3">
+                <span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-sm border border-gray-200 font-mono text-[10px] font-bold text-emerald-700">
+                  DEPLOYED DEMO
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-gray-950">Freelance Portfolio Website</h3>
+                  <span class="font-mono text-xs text-gray-400">TypeScript</span>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  A personal freelancing website built with TypeScript and CSS to practice creating clean layout structures, service cards, and deploying to Vercel.
+                </p>
+              </div>
+
+              <div class="space-y-4 pt-2 border-t border-gray-200/60">
+                <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">TypeScript</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Responsive Layout</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Vercel</span>
+                </div>
+
+                <div class="flex items-center justify-between pt-1">
+                  <a href="https://github.com/abhishekmiyan34-gif/Pesonal-freelencing-website" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-gray-900 hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    <span>Code</span>
+                  </a>
+                  <a href="https://portfolio-website-two-sigma-21.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+                    <span>Live Demo</span>
+                    <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: CSS Practice Project (Project Highlight + Live Demo) -->
+          <article class="project-item flex flex-col bg-[#FAF9F6] rounded-2xl border border-gray-200 overflow-hidden editorial-card" data-category="featured">
+            <div class="relative aspect-[16/10] bg-gray-100 border-b border-gray-200 overflow-hidden">
+              <img src="assets/images/projects/css-lab.svg" alt="CSS Practice Project Architecture" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3">
+                <span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-sm border border-gray-200 font-mono text-[10px] font-bold text-blue-600">
+                  CSS PRACTICE
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-gray-950">CSS Practice Project</h3>
+                  <span class="font-mono text-xs text-gray-400">HTML / CSS</span>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  Basic HTML and CSS assignment showcasing CSS selectors, text styling, background properties, and list customization deployed to Vercel.
+                </p>
+              </div>
+
+              <div class="space-y-4 pt-2 border-t border-gray-200/60">
+                <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">CSS3</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Selectors</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Box Model</span>
+                </div>
+
+                <div class="flex items-center justify-between pt-1">
+                  <a href="https://github.com/abhishekmiyan34-gif/css-practice-project" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-gray-900 hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    <span>Code</span>
+                  </a>
+                  <a href="https://css-practice-project-phi.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+                    <span>Live Demo</span>
+                    <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: ResumeDemo (Practice Lab) -->
+          <article class="project-item flex flex-col bg-[#FAF9F6] rounded-2xl border border-gray-200 overflow-hidden editorial-card" data-category="foundation">
+            <div class="relative aspect-[16/10] bg-gray-100 border-b border-gray-200 overflow-hidden">
+              <img src="assets/images/projects/foundations.svg" alt="Semantic Web Foundations" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3">
+                <span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-sm border border-gray-200 font-mono text-[10px] font-bold text-gray-700">
+                  PRACTICE LAB
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-gray-950">ResumeDemo</h3>
+                  <span class="font-mono text-xs text-gray-400">HTML5</span>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  A demo resume project built using HTML as part of my first-year B.Tech learning. Created with placeholder text to practice HTML structure, semantic tags, and page layout.
+                </p>
+              </div>
+
+              <div class="space-y-4 pt-2 border-t border-gray-200/60">
+                <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">HTML5</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Semantic Tags</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Year 1 Lab</span>
+                </div>
+
+                <div class="pt-1">
+                  <a href="https://github.com/abhishekmiyan34-gif/ResumeDemo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-gray-900 hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    <span>Inspect Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: LaundryWallah Landing Demo (Practice Lab) -->
+          <article class="project-item flex flex-col bg-[#FAF9F6] rounded-2xl border border-gray-200 overflow-hidden editorial-card" data-category="foundation">
+            <div class="relative aspect-[16/10] bg-gray-100 border-b border-gray-200 overflow-hidden">
+              <img src="assets/images/projects/foundations.svg" alt="Semantic Web Landing Layout" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3">
+                <span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-sm border border-gray-200 font-mono text-[10px] font-bold text-gray-700">
+                  PRACTICE LAB
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-gray-950">LaundryWallah Demo</h3>
+                  <span class="font-mono text-xs text-gray-400">HTML5</span>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  A simple landing page for a fictional laundry service, built to practice semantic HTML, page structure, and basic web development concepts.
+                </p>
+              </div>
+
+              <div class="space-y-4 pt-2 border-t border-gray-200/60">
+                <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">HTML5</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Form Practice</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Semantic Web</span>
+                </div>
+
+                <div class="pt-1">
+                  <a href="https://github.com/abhishekmiyan34-gif/LaundryWallahHTMLdemo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-gray-900 hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    <span>Inspect Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: AboutEarth (Practice Lab) -->
+          <article class="project-item flex flex-col bg-[#FAF9F6] rounded-2xl border border-gray-200 overflow-hidden editorial-card" data-category="foundation">
+            <div class="relative aspect-[16/10] bg-gray-100 border-b border-gray-200 overflow-hidden">
+              <img src="assets/images/projects/foundations.svg" alt="Educational Content Architecture" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3">
+                <span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-sm border border-gray-200 font-mono text-[10px] font-bold text-gray-700">
+                  PRACTICE LAB
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-gray-950">AboutEarth Webpage</h3>
+                  <span class="font-mono text-xs text-gray-400">HTML5</span>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  A simple webpage built to practice semantic HTML, document formatting, and content structure as part of my web development learning journey.
+                </p>
+              </div>
+
+              <div class="space-y-4 pt-2 border-t border-gray-200/60">
+                <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">HTML5</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Document Flow</span>
+                  <span class="px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-700">Formatting</span>
+                </div>
+
+                <div class="pt-1">
+                  <a href="https://github.com/abhishekmiyan34-gif/AboutEarth" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-gray-900 hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    <span>Inspect Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- GitHub Integration Ribbon -->
+        <div id="github-overview" class="mt-12 p-6 sm:p-8 rounded-2xl bg-gray-900 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-2 text-center md:text-left">
+            <div class="flex items-center justify-center md:justify-start space-x-2">
+              <span id="gh-status-indicator" class="flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-gray-800 text-xs font-mono text-emerald-400">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>GITHUB VERIFIED</span>
+              </span>
+              <span class="font-mono text-xs text-gray-400">@abhishekmiyan34-gif</span>
+            </div>
+            <p id="gh-bio" class="text-sm text-gray-300 italic">
+              “Growing step by step towards becoming a skilled developer”
+            </p>
+          </div>
+
+          <div class="flex items-center space-x-6">
+            <div class="text-center font-mono">
+              <span id="gh-repo-count" class="block text-2xl font-bold text-white">7</span>
+              <span class="text-[11px] text-gray-400 uppercase">Public Repos</span>
+            </div>
+            <a href="https://github.com/abhishekmiyan34-gif" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-xs font-semibold uppercase tracking-wider transition-colors inline-flex items-center">
+              <span>View On GitHub</span>
+              <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================================
+         SECTION 5: AEROKART (LONG-TERM VISION SECTION)
+         ===================================================================== -->
+    <section id="aerokart" class="py-24 border-t border-gray-200/80 bg-[#FAF9F6] relative overflow-hidden">
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-12">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-blue-50 border border-blue-200 text-blue-700 font-mono text-xs font-bold uppercase tracking-wider mb-3">
+            <span>LONG-TERM VISION // AN IDEA I'M EXCITED ABOUT</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-950">
+            AeroKart: An idea for autonomous last-mile logistics.
+          </h2>
+          <p class="text-gray-600 mt-4 text-base sm:text-lg leading-relaxed font-normal">
+            «"Some projects show what I am learning today. AeroKart represents the kind of problems I want to explore in the future."»
+          </p>
+          <p class="text-gray-500 mt-2 text-sm leading-relaxed">
+            AeroKart is not a commercial product or a finished system. It is an ambitious long-term concept that inspires my learning: combining drones, IoT sensors, cloud software, and AI to deliver packages autonomously. As I develop programming fundamentals today and explore hardware and robotics down the road, this concept gives my learning a sense of direction.
+          </p>
+        </div>
+
+        <!-- Vision Schematic / Blueprint Container -->
+        <div class="bg-white rounded-2xl border border-gray-200 p-3 sm:p-6 shadow-sm mb-12 tech-tick">
+          <div class="aspect-[16/9] w-full rounded-xl overflow-hidden bg-gray-50 border border-gray-200/80">
+            <img src="assets/images/aerokart-blueprint.svg" alt="AeroKart Autonomous UAV Logistics Schematic" class="w-full h-full object-contain">
+          </div>
+          <div class="mt-4 flex flex-wrap items-center justify-between text-xs font-mono text-gray-500 px-2 gap-2">
+            <span>CONCEPT: DRONES + IOT SENSORS + CLOUD SOFTWARE + AI</span>
+            <span>STATUS: FUTURE LEARNING HORIZON</span>
+          </div>
+        </div>
+
+        <!-- 4 Areas of Interest for this concept -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm editorial-card space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 font-mono text-sm font-bold">
+              01
+            </div>
+            <h3 class="text-base font-bold text-gray-900">Autonomous Flight Concepts</h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Interested in learning about open-source flight stacks like PX4 and ArduPilot, understanding waypoint flight paths, and exploring simulation environments.
+            </p>
+            <div class="pt-2 font-mono text-[10px] text-blue-600 font-medium">PX4 · ArduPilot · Curiosity</div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm editorial-card space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 font-mono text-sm font-bold">
+              02
+            </div>
+            <h3 class="text-base font-bold text-gray-900">Perception &amp; Vision</h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Curious about how camera feeds and OpenCV can help identify drop-off markers, verify clear landing zones, and detect obstacles.
+            </p>
+            <div class="pt-2 font-mono text-[10px] text-blue-600 font-medium">ROS · OpenCV · Future Goal</div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm editorial-card space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 font-mono text-sm font-bold">
+              03
+            </div>
+            <h3 class="text-base font-bold text-gray-900">Sensor &amp; Hardware Telemetry</h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Experimenting with Arduino and microcontrollers to read simple sensor data (ultrasonic, temperature, voltage) and transmit readings.
+            </p>
+            <div class="pt-2 font-mono text-[10px] text-blue-600 font-medium">Arduino · C/C++ · Experimenting</div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm editorial-card space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 font-mono text-sm font-bold">
+              04
+            </div>
+            <h3 class="text-base font-bold text-gray-900">Web &amp; Cloud Coordination</h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Applying my web development learning to explore how web apps can display live maps, coordinate delivery routes, and track parcel statuses.
+            </p>
+            <div class="pt-2 font-mono text-[10px] text-blue-600 font-medium">Web Apps · APIs · Cloud Basics</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================================
+         SECTION 6: JOURNEY & ROADMAP (HONEST STUDENT ROADMAP)
+         ===================================================================== -->
+    <section id="journey" class="py-20 border-t border-gray-200/80 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mb-14">
+          <span class="font-mono text-xs font-semibold text-blue-600 uppercase tracking-wider block mb-2">04 // LEARNING ROADMAP</span>
+          <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-gray-950">
+            Step by step: developing fundamentals and exploring new areas.
+          </h2>
+          <p class="text-gray-600 mt-2 text-sm sm:text-base">
+            A realistic roadmap of where I started, what I am practicing right now, and what I hope to learn down the line.
+          </p>
+        </div>
+
+        <!-- Roadmap Timeline List -->
+        <div class="space-y-6">
+
+          <!-- Phase 01 -->
+          <div class="p-6 rounded-2xl bg-[#FAF9F6] border border-gray-200 flex flex-col md:flex-row md:items-center justify-between gap-6 editorial-card">
+            <div class="flex items-start space-x-4">
+              <span class="font-mono text-lg font-extrabold text-blue-600">01</span>
+              <div>
+                <div class="flex items-center space-x-3">
+                  <h3 class="text-lg font-bold text-gray-950">Web Fundamentals</h3>
+                  <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-mono text-[10px] font-semibold">LEARNING &amp; PRACTICING</span>
+                </div>
+                <p class="text-sm text-gray-600 mt-1 max-w-2xl">
+                  Semantic HTML, CSS layouts, Tailwind CSS, JavaScript basics, and TypeScript exploration through small demo web pages.
+                </p>
+              </div>
+            </div>
+            <div class="font-mono text-xs text-gray-500 whitespace-nowrap pl-10 md:pl-0">
+              HTML5 · CSS3 · JS · TypeScript
+            </div>
+          </div>
+
+          <!-- Phase 02 -->
+          <div class="p-6 rounded-2xl bg-[#FAF9F6] border border-blue-200/80 ring-1 ring-blue-500/10 flex flex-col md:flex-row md:items-center justify-between gap-6 editorial-card">
+            <div class="flex items-start space-x-4">
+              <span class="font-mono text-lg font-extrabold text-blue-600">02</span>
+              <div>
+                <div class="flex items-center space-x-3">
+                  <h3 class="text-lg font-bold text-gray-950">DSA &amp; Programming Fundamentals</h3>
+                  <span class="px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 font-mono text-[10px] font-semibold">CURRENT FOCUS</span>
+                </div>
+                <p class="text-sm text-gray-600 mt-1 max-w-2xl">
+                  Practicing Data Structures &amp; Algorithms in Python and C++, getting comfortable with Linux command-line tools, and using Git for version control.
+                </p>
+              </div>
+            </div>
+            <div class="font-mono text-xs text-blue-600 font-medium whitespace-nowrap pl-10 md:pl-0">
+              Python · DSA · Linux · Git
+            </div>
+          </div>
+
+          <!-- Phase 03 -->
+          <div class="p-6 rounded-2xl bg-[#FAF9F6] border border-gray-200 flex flex-col md:flex-row md:items-center justify-between gap-6 editorial-card">
+            <div class="flex items-start space-x-4">
+              <span class="font-mono text-lg font-extrabold text-blue-600">03</span>
+              <div>
+                <div class="flex items-center space-x-3">
+                  <h3 class="text-lg font-bold text-gray-950">IoT &amp; Hardware Tinkering</h3>
+                  <span class="px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 font-mono text-[10px] font-semibold">EXPERIMENTING</span>
+                </div>
+                <p class="text-sm text-gray-600 mt-1 max-w-2xl">
+                  Tinkering with microcontrollers (Arduino), basic sensors, LEDs, and understanding how code can interact with simple physical circuits.
+                </p>
+              </div>
+            </div>
+            <div class="font-mono text-xs text-gray-500 whitespace-nowrap pl-10 md:pl-0">
+              Arduino · C/C++ · Basic Sensors
+            </div>
+          </div>
+
+          <!-- Phase 04 -->
+          <div class="p-6 rounded-2xl bg-white border border-dashed border-gray-300 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="flex items-start space-x-4">
+              <span class="font-mono text-lg font-extrabold text-gray-400">04</span>
+              <div>
+                <div class="flex items-center space-x-3">
+                  <h3 class="text-lg font-bold text-gray-800">Robotics &amp; Computer Vision</h3>
+                  <span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 font-mono text-[10px] font-semibold">WANT TO LEARN</span>
+                </div>
+                <p class="text-sm text-gray-500 mt-1 max-w-2xl">
+                  Excited to explore the basics of ROS (Robot Operating System), camera perception with OpenCV, and simple computer vision experiments.
+                </p>
+              </div>
+            </div>
+            <div class="font-mono text-xs text-gray-400 whitespace-nowrap pl-10 md:pl-0">
+              ROS · OpenCV · Exploration
+            </div>
+          </div>
+
+          <!-- Phase 05 -->
+          <div class="p-6 rounded-2xl bg-white border border-dashed border-gray-300 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="flex items-start space-x-4">
+              <span class="font-mono text-lg font-extrabold text-gray-400">05</span>
+              <div>
+                <div class="flex items-center space-x-3">
+                  <h3 class="text-lg font-bold text-gray-800">Drone &amp; Autopilot Concepts</h3>
+                  <span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 font-mono text-[10px] font-semibold">FUTURE INTEREST</span>
+                </div>
+                <p class="text-sm text-gray-500 mt-1 max-w-2xl">
+                  Curious to study open-source flight stacks like PX4 and ArduPilot, try drone simulation tools, and learn 3D modeling with Autodesk Fusion 360.
+                </p>
+              </div>
+            </div>
+            <div class="font-mono text-xs text-gray-400 whitespace-nowrap pl-10 md:pl-0">
+              PX4 · ArduPilot · Fusion 360
+            </div>
+          </div>
+
+          <!-- Phase 06 -->
+          <div class="p-6 rounded-2xl bg-gradient-to-r from-blue-50/50 via-white to-white border border-blue-200 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="flex items-start space-x-4">
+              <span class="font-mono text-lg font-extrabold text-blue-600">06</span>
+              <div>
+                <div class="flex items-center space-x-3">
+                  <h3 class="text-lg font-bold text-blue-950">AeroKart Prototype</h3>
+                  <span class="px-2 py-0.5 rounded-full bg-blue-600 text-white font-mono text-[10px] font-bold">LONG-TERM GOAL</span>
+                </div>
+                <p class="text-sm text-blue-900/80 mt-1 max-w-2xl">
+                  Bringing together software, hardware, and autonomous ideas into a practical working prototype for autonomous delivery.
+                </p>
+              </div>
+            </div>
+            <div class="font-mono text-xs text-blue-700 font-bold whitespace-nowrap pl-10 md:pl-0">
+              Future Prototype Vision
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================================
+         SECTION 7: CURRENTLY LEARNING VS EXPLORING NEXT
+         ===================================================================== -->
+    <section id="focus" class="py-20 border-t border-gray-200/80 bg-[#FAF9F6]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- CURRENTLY PRACTICING -->
+          <div class="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm space-y-6">
+            <div class="flex items-center space-x-2 pb-3 border-b border-gray-100">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+              <h3 class="font-mono text-xs uppercase tracking-wider font-bold text-gray-900">
+                WHAT I'M CURRENTLY PRACTICING
+              </h3>
+            </div>
+            <ul class="space-y-4 text-sm text-gray-700">
+              <li class="flex items-start space-x-3">
+                <span class="font-mono text-blue-600 font-bold">→</span>
+                <span><strong>Web Development:</strong> Building small projects with HTML, CSS, Tailwind, JavaScript, and exploring TypeScript.</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="font-mono text-blue-600 font-bold">→</span>
+                <span><strong>Data Structures &amp; Algorithms:</strong> Practicing core problem-solving with Python and C++.</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="font-mono text-blue-600 font-bold">→</span>
+                <span><strong>Linux &amp; Git:</strong> Getting comfortable with the command line and tracking projects on GitHub.</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="font-mono text-blue-600 font-bold">→</span>
+                <span><strong>Hardware Tinkering:</strong> Wiring basic breadboard circuits and experimenting with Arduino.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- EXPLORING NEXT -->
+          <div class="p-8 rounded-2xl bg-white border border-blue-200 shadow-sm space-y-6">
+            <div class="flex items-center space-x-2 pb-3 border-b border-blue-100">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
+              <h3 class="font-mono text-xs uppercase tracking-wider font-bold text-blue-900">
+                AREAS I'M CURIOUS ABOUT NEXT
+              </h3>
+            </div>
+            <ul class="space-y-4 text-sm text-gray-700">
+              <li class="flex items-start space-x-3">
+                <span class="font-mono text-blue-600 font-bold">↗</span>
+                <span><strong>Robot Operating System (ROS):</strong> Interested in how nodes and robotics frameworks work together.</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="font-mono text-blue-600 font-bold">↗</span>
+                <span><strong>Computer Vision:</strong> Excited to learn image processing and OpenCV for detecting objects and markers.</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="font-mono text-blue-600 font-bold">↗</span>
+                <span><strong>Autopilot Systems:</strong> Curious about how PX4 and ArduPilot handle autonomous flight navigation.</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="font-mono text-blue-600 font-bold">↗</span>
+                <span><strong>3D CAD Design:</strong> Want to learn Autodesk Fusion 360 to design custom brackets and parts.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================================
+         SECTION 8: LEARNING PHILOSOPHY
+         ===================================================================== -->
+    <section id="philosophy" class="py-20 border-t border-gray-200/80 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+        
+        <span class="font-mono text-xs font-semibold text-blue-600 uppercase tracking-wider block">
+          05 // MY LEARNING PHILOSOPHY
+        </span>
+
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-950">
+          “Build. Learn. Improve. Repeat.”
+        </h2>
+
+        <div class="space-y-6 text-base sm:text-lg text-gray-600 leading-relaxed font-normal max-w-2xl mx-auto text-left">
+          <p>
+            I believe the best way to grow is to stay curious and build things. I don't wait until I feel like an "expert" to start writing code — every new concept I learn, I try to turn into a small project or experiment.
+          </p>
+          <p>
+            When code doesn't work or an experiment fails, that's where the real learning happens. Each bug teaches me how computers actually think, and each challenge improves how I approach problems.
+          </p>
+          <p class="font-medium text-gray-900">
+            My story is: I'm learning. I'm building. I'm experimenting. I'm figuring out what I want to become.
+          </p>
+        </div>
+
+        <div class="pt-4 flex items-center justify-center space-x-4 font-mono text-xs text-gray-500">
+          <span>CURIOSITY</span>
+          <span>·</span>
+          <span>EXPERIMENTATION</span>
+          <span>·</span>
+          <span>AUTHENTICITY</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================================
+         SECTION 9: CONTACT SECTION
+         ===================================================================== -->
+    <section id="contact" class="py-20 border-t border-gray-200/80 bg-[#FAF9F6]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Left: Editorial Info (5 cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            <span class="font-mono text-xs font-semibold text-blue-600 uppercase tracking-wider block">06 // SAY HELLO</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-950">
+              Let's connect &amp; chat.
+            </h2>
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+              I would love to connect with fellow students, developers, mentors, or anyone who enjoys discussing technology, code, and robotics. Always happy to learn from others!
+            </p>
+
+            <div class="space-y-4 pt-4">
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/abhishek-singh-miyan-29091a363/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-600 transition-colors shadow-sm group">
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-mono text-gray-400">CONNECT ON LINKEDIN</span>
+                    <span class="block text-sm font-semibold text-gray-900 group-hover:text-blue-600">Abhishek Singh Miyan</span>
+                  </div>
+                </div>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/abhishekmiyan34-gif" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200 hover:border-gray-900 transition-colors shadow-sm group">
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-lg bg-gray-100 text-gray-900 flex items-center justify-center">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-mono text-gray-400">CHECK MY CODE</span>
+                    <span class="block text-sm font-semibold text-gray-900 group-hover:text-blue-600">github.com/abhishekmiyan34-gif</span>
+                  </div>
+                </div>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-gray-900 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+
+            <!-- Fast Copy Pill -->
+            <div class="pt-2">
+              <button type="button" class="copy-trigger text-xs font-mono text-gray-500 hover:text-blue-600 inline-flex items-center space-x-1" data-copy-text="https://github.com/abhishekmiyan34-gif">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <span>Click to copy GitHub profile URL</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact Right: Integration-Ready Form (7 cols) -->
+          <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm tech-tick">
+            
+            <form id="portfolio-contact-form" class="space-y-5" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="form-name" class="block text-xs font-mono uppercase tracking-wider text-gray-700 font-semibold mb-1.5">
+                    Your Name <span class="text-red-500">*</span>
+                  </label>
+                  <input type="text" id="form-name" name="name" required placeholder="Jane Doe" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-sm focus:border-blue-600 transition-colors bg-[#FAF9F6]">
+                  <span id="name-error" class="hidden text-xs text-red-500 mt-1 block"></span>
+                </div>
+
+                <div>
+                  <label for="form-email" class="block text-xs font-mono uppercase tracking-wider text-gray-700 font-semibold mb-1.5">
+                    Your Email <span class="text-red-500">*</span>
+                  </label>
+                  <input type="email" id="form-email" name="email" required placeholder="jane@domain.com" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-sm focus:border-blue-600 transition-colors bg-[#FAF9F6]">
+                  <span id="email-error" class="hidden text-xs text-red-500 mt-1 block"></span>
+                </div>
+              </div>
+
+              <div>
+                <label for="form-subject" class="block text-xs font-mono uppercase tracking-wider text-gray-700 font-semibold mb-1.5">
+                  Subject
+                </label>
+                <input type="text" id="form-subject" name="subject" placeholder="Saying Hello / Tech Discussion / Advice" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-sm focus:border-blue-600 transition-colors bg-[#FAF9F6]">
+              </div>
+
+              <div>
+                <label for="form-message" class="block text-xs font-mono uppercase tracking-wider text-gray-700 font-semibold mb-1.5">
+                  Message <span class="text-red-500">*</span>
+                </label>
+                <textarea id="form-message" name="message" rows="4" required placeholder="Feel free to drop a message, share advice, or discuss ideas..." class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-sm focus:border-blue-600 transition-colors bg-[#FAF9F6] resize-y"></textarea>
+                <span id="message-error" class="hidden text-xs text-red-500 mt-1 block"></span>
+              </div>
+
+              <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <button type="submit" id="form-submit-btn" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gray-950 text-white text-xs font-semibold uppercase tracking-wider hover:bg-blue-600 transition-colors shadow-sm">
+                  <span>Send Message</span>
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+                <span class="font-mono text-[11px] text-gray-400">
+                  Feel free to share advice or ideas!
+                </span>
+              </div>
+            </form>
+
+            <!-- Success State Box (Initially hidden) -->
+            <div id="form-success-message" class="hidden p-6 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-950 space-y-4 text-center">
+              <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <h3 class="text-base font-bold">Message Received</h3>
+              <p class="text-xs text-emerald-800 leading-relaxed max-w-md mx-auto">
+                Thank you for reaching out! Since this is a static site demo, feel free to connect directly via LinkedIn or GitHub as well.
+              </p>
+              <div class="pt-2">
+                <button type="button" id="form-reset-btn" class="px-4 py-2 bg-white border border-emerald-300 text-emerald-900 rounded-lg text-xs font-semibold hover:bg-emerald-100 transition-colors">
+                  Send Another Message
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="border-t border-gray-200 bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-gray-100">
+        
+        <div>
+          <span class="block text-base font-bold text-gray-900">Abhishek Singh Miyan</span>
+          <span class="block font-mono text-xs text-gray-500 mt-0.5">
+            Learning. Building. Experimenting.
+          </span>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="flex items-center space-x-6 text-sm text-gray-600 font-medium">
+          <a href="#hero" class="hover:text-blue-600 transition-colors">Top</a>
+          <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+          <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
+          <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
+          <a href="#aerokart" class="hover:text-blue-600 transition-colors">AeroKart</a>
+          <a href="https://github.com/abhishekmiyan34-gif" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900">GitHub</a>
+          <a href="https://www.linkedin.com/in/abhishek-singh-miyan-29091a363/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">LinkedIn</a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-gray-400 gap-4">
+        <div>
+          &copy; 2026 Abhishek Singh Miyan. All rights reserved.
+        </div>
+        <div class="flex items-center space-x-3">
+          <span>B.TECH STUDENT PORTFOLIO</span>
+          <span>&middot;</span>
+          <span>BUILDING &amp; EXPLORING</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Toast Notification for Copy-to-Clipboard -->
+  <div id="copy-toast" class="fixed bottom-6 right-6 z-50 px-4 py-2.5 rounded-xl bg-gray-950 text-white text-xs font-mono shadow-xl border border-gray-800 transition-all duration-300 opacity-0 pointer-events-none translate-y-2 flex items-center space-x-2">
+    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <span>Copied to clipboard</span>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
